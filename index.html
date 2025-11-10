@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seongpil Hong - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 500: '#667eea', 600: '#5a67d8' },
+                        accent: { 500: '#764ba2' },
+                        dark: { 500: '#2c3e50', 600: '#34495e' },
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-sans leading-relaxed text-gray-800 antialiased">
+
+    <header class="bg-gradient-to-br from-primary-500 to-accent-500 text-white text-center py-24 px-8">
+        <h1 class="text-5xl font-bold mb-2">Seongpil Hong</h1>
+        <p class="text-xl opacity-90">Full-Stack Developer | DevOps & Data Pipelines | Ex-Investment Analyst → Tech</p>
+    </header>
+
+    <nav class="bg-dark-500 py-4 text-center sticky top-0 z-50 shadow-lg">
+        <div class="inline-flex gap-4">
+            <a href="#about" class="text-white px-6 py-3 rounded hover:bg-dark-600 transition">About</a>
+            <a href="#skills" class="text-white px-6 py-3 rounded hover:bg-dark-600 transition">Skills</a>
+            <a href="#projects" class="text-white px-6 py-3 rounded hover:bg-dark-600 transition">Projects</a>
+            <a href="#contact" class="text-white px-6 py-3 rounded hover:bg-dark-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-8 py-12">
+
+        <section id="about" class="my-20">
+            <h2 class="text-4xl font-bold text-primary-500 mb-8 pb-4 border-b-4 border-primary-500 inline-block">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12 flex-wrap">
+                <div class="w-52 h-52 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 p-2 shadow-2xl">
+                    <img src="profile.jpg" alt="Seongpil Hong" class="w-full h-full rounded-full object-cover border-4 border-white">
+                </div>
+                <div class="flex-1 min-w-[300px]">
+                    <p class="text-lg mb-6">full-stack engineer (LaunchCode St. Louis graduate). Mastering Spring Boot, React, Python/Pandas, and modern DevOps (Docker, Kafka, Jenkins, Bash).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="my-20">
+            <h2 class="text-4xl font-bold text-primary-500 mb-8 pb-4 border-b-4 border-primary-500 inline-block">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-primary-500 hover:-translate-y-2 hover:shadow-xl transition transform">
+                    <h3 class="text-2xl font-semibold text-dark-500 mb-3">Frontend</h3>
+                    <p class="text-gray-700">React, HTML, CSS, Bootstrap</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-primary-500 hover:-translate-y-2 hover:shadow-xl transition transform">
+                    <h3 class="text-2xl font-semibold text-dark-500 mb-3">Backend & Data</h3>
+                    <p class="text-gray-700">Spring Boot, Python, Pandas, Flask</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg border-l-4 border-primary-500 hover:-translate-y-2 hover:shadow-xl transition transform">
+                    <h3 class="text-2xl font-semibold text-dark-500 mb-3">DevOps & Scripting</h3>
+                    <p class="text-gray-700">Docker, Kafka, Jenkins, Bash, Linux</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="my-20">
+            <h2 class="text-4xl font-bold text-primary-500 mb-8 pb-4 border-b-4 border-primary-500 inline-block">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl transition transform duration-300 relative">
+                    <div class="bg-gradient-to-br from-primary-500 to-accent-500 text-white p-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold">World Happiness Dashboard</h3>
+                            <p class="text-sm opacity-90 mt-1">Full CI/CD + Streaming Pipeline</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Downloads World Happiness Report → Pandas analysis → Matplotlib charts → streams insights via Kafka. Orchestrated with Docker Compose + Jenkins auto-build on push.</p>
+                        <div class="flex flex-wrap gap-2 text-sm mb-4">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">Pandas</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Docker</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">Kafka</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Jenkins</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/sundayMorning99/Jenkins-Docker-Kafka" target="_blank" class="flex items-center gap-2 text-primary-600 hover:text-primary-500 font-medium">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://github.com/sundayMorning99/Jenkins-Docker-Kafka#readme" target="_blank" class="flex items-center gap-2 bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-500 transition">
+                                <i class="fas fa-book"></i> Demo README
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl transition transform duration-300">
+                    <div class="bg-gradient-to-br from-primary-500 to-accent-500 text-white p-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold">Bash Log Management</h3>
+                            <p class="text-sm opacity-90 mt-1">Archiving + Auto-Purge + Monitoring</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Two production-grade Bash scripts: (1) Archives logs & purges old archives, (2) Real-time system resource monitor using top/awk. Includes beginner tips on [[ ]], regex, exit codes.</p>
+                        <div class="flex flex-wrap gap-2 text-sm mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full">Bash</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Linux</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">awk/grep</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">Regex</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/sundayMorning99/Bash_Log_File_Management" target="_blank" class="flex items-center gap-2 text-primary-600 hover:text-primary-500 font-medium">
+                                <i class="fab fa-github"></i> Code + Tips
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl transition transform duration-300">
+                    <div class="bg-gradient-to-br from-primary-500 to-accent-500 text-white p-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold">Titanic Survival API</h3>
+                            <p class="text-sm opacity-90 mt-1">Containerized Flask REST API</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Dockerized Flask + Pandas + SQLite API serving Titanic stats: survival by class/gender, age distribution, passenger lookup. Run with <code>docker-compose up --build</code>.</p>
+                        <div class="flex flex-wrap gap-2 text-sm mb-4">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full">Flask</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">Docker</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Pandas</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/sundayMorning99/Data_Analysis" target="_blank" class="flex items-center gap-2 text-primary-600 hover:text-primary-500 font-medium">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="https://github.com/sundayMorning99/Data_Analysis#readme" target="_blank" class="flex items-center gap-2 bg-primary-600 text-white px-4 py-2 rounded-lg hover:bg-primary-500 transition">
+                                <i class="fas fa-play"></i> API Endpoints
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:-translate-y-3 hover:shadow-2xl transition transform duration-300">
+                    <div class="bg-gradient-to-br from-primary-500 to-accent-500 text-white p-6 flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold">LaunchCode Capstone</h3>
+                            <p class="text-sm opacity-90 mt-1">Full-Stack Final Project</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Official LaunchCode final assignment re-upload. Demonstrates mastery of Spring Boot + React + MySQL stack from the St. Louis cohort.</p>
+                        <div class="flex flex-wrap gap-2 text-sm mb-4">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full">Spring Boot</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full">React</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full">MySQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/sundayMorning99/LaunchCode-final-assignment" target="_blank" class="flex items-center gap-2 text-primary-600 hover:text-primary-500 font-medium">
+                                <i class="fab fa-github"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="my-20">
+            <h2 class="text-4xl font-bold text-primary-500 mb-8 pb-4 border-b-4 border-primary-500 inline-block">Get In Touch</h2>
+            <div class="flex flex-wrap justify-center gap-12 mt-12">
+                <div class="text-center p-8 bg-gray-50 rounded-lg min-w-[200px]">
+                    <div class="text-5xl mb-4">📧</div>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <p class="text-gray-700">seongpilh@gmail.com</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-lg min-w-[200px]">
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+                    <p class="text-gray-700">linkedin.com/in/SeongpilHong</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-lg min-w-[200px]">
+                    <div class="text-5xl mb-4">🐙</div>
+                    <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                    <p class="text-gray-700">github.com/sundayMorning99</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-dark-500 text-white text-center py-12 mt-20">
+        <p>&copy; 2025 Seongpil Hong. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
